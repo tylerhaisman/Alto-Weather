@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
+        <meta name="theme-color" content="#5095CD"/>
+        <title>Alto Weather</title>
+        <!-- <link rel="icon" type="image/png" href="images/favicon.png"/> -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;600&family=Audiowide&family=Exo+2:ital,wght@0,400;0,900;1,100&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+    <body>
+        <header>
+            <div class="logo">
+                <div class="logotitle">
+                    <h1>alto</h1>
+                </div>
+                <div class="logodesc">
+                    <p1>weather</p1>
+                </div>
+            </div>
+        </header>
+        <div class="allsections loading">
+            <section class="intro">
+                <div class="messagebox">
+                    <div class="message">
+                        <p1>Welcome to Alto, your simplified weather base.</p1>
+                        <input type="search" id="search" name="location" class="search-bar" placeholder="Please enter a location.">
+                        <button class="searchbtn">See Weather</button>
+                    </div>
+                </div>
+                <div class="currentlocation">
+                    <p1>Currently showing the weather in </p1><p3 class="locationtext"></p3>
+                </div>
+            </section>
+            <section class="weatherdata">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-md-6">
+                                <div class="temperature">
+                                    <div class="content">
+                                        <h2>Temperature<br><br></h2>
+                                        <div class="tempvalue">
+                                            <h4>78°F</h4>
+                                        </div>
+                                        <div class="hiandlo">
+                                            <p1>Hi: 81°F Lo: 71°F</p1>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="conditions">
+                                    <div class="content">
+                                        <h2>Conditions</h2>
+                                            <img src="images/partlycloudy.png" class="conditionicon"alt="">
+                                        <div class="conditiondesc">
+                                            <p1><br>Partly Cloudy</p1>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="hourforecast">
+                                <div class="content">
+                                    <h2>12-hour Forecast</h2>
+                                    <div class="container horizontal-scrollable">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3 class="hourlytemp"><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>3 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>4 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>5 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="hourforecastcard">
+                                                    <div class="content">
+                                                        <h2>2 PM</h2>
+                                                        <img src="images/partlycloudy.png" alt="">
+                                                        <p2><br>Partly Cloudy</p2>
+                                                        <p3><br>75°F<br></p3>
+                                                        <img class="precip" src="images/precip.png" alt="">
+                                                        <p2>15%</p2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="group3">
+                                <div class="content">
+                                    <h2>Chance of Precipitation</h2>
+                                    <div class="value">
+                                        <h3>18%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group3">
+                                <div class="content">
+                                    <h2>Humidity</h2>
+                                    <div class="value">
+                                        <div class="humid">
+                                            <h3>82%</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group3">
+                                <div class="content">
+                                    <h2>Wind</h2>
+                                    <div class="windspeed">
+                                        <h3>12 mph</h3>
+                                    </div>
+                                    <div class="winddir">
+                                        <p1>Southeast</p1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="forecast">
+                                <div class="content">
+                                    <h2>4-day Forecast</h2>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="forecastcard">
+                                                <div class="content">
+                                                    <h2 class="forecastday1">Tuesday</h2>
+                                                    <img src="images/partlycloudy.png" class="dailyforecasticon1" alt="">
+                                                    <br><p2 class="dailyforecastcond1">Partly Cloudy</p2>
+                                                    <br><p3 class="forecasthilo1">Hi: 75°F Lo: 66°F</p3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="forecastcard">
+                                                <div class="content">
+                                                    <h2 class="forecastday2">Wednesday</h2>
+                                                    <img src="images/partlycloudy.png" class="dailyforecasticon2" alt="">                                                    <br><p2 class="dailyforecastcond2">Partly Cloudy</p2>
+                                                    <br><p3 class="forecasthilo2">Hi: 75°F Lo: 66°F</p3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="forecastcard">
+                                                <div class="content">
+                                                    <h2 class="forecastday3">Thursday</h2>
+                                                    <img src="images/partlycloudy.png" class="dailyforecasticon3" alt="">                                                    <br><p2 class="dailyforecastcond3">Partly Cloudy</p2>
+                                                    <br><p3 class="forecasthilo3">Hi: 75°F Lo: 66°F</p3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="forecastcard">
+                                                <div class="content">
+                                                    <h2 class="forecastday4">Friday</h2>
+                                                    <img src="images/partlycloudy.png" class="dailyforecasticon4" alt="">                                                    <br><p2 class="dailyforecastcond4">Partly Cloudy</p2>
+                                                    <br><p3 class="forecasthilo4">Hi: 75°F Lo: 66°F</p3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footercontent">
+                <p1><img class="copyrightsymbol" src="images/copyright.png" alt=""> 2023 Alto Weather<br>Developed by <a href="https://tylerhaisman.com">Tyler Haisman</a></p1>
+            </div>
+            <div class="tester">
+
+            </div>
+        </footer>
+        <script src="script.js" defer></script>
+    </body>
+</html>
+
+

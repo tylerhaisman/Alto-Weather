@@ -1,0 +1,671 @@
+/* FONTS */
+
+@font-face {
+    font-family: title;
+    src: url(fonts/Cappadocia.otf);
+  }
+  @font-face {
+    font-family: paragraph;
+    src: url(fonts/Outfit-Light.otf);
+  }
+  @font-face {
+    font-family: paragraphbold;
+    src: url(fonts/Outfit-Bold.otf);
+  }
+  
+  /* BUTTONS */
+  button{
+    text-decoration: none;
+    color: #6e79b0;
+    border: 4px solid #fff;
+    border-radius: 100px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #fff;
+    transition: 0.2s;
+    z-index: 100;
+  }
+  button:hover {
+    box-shadow: 0px 0px 60px #fff;
+  }
+
+  /* BODY PROPERTIES */
+  body{
+    transition: 0.5s;
+  }
+
+  /* STUFF FOR BOOTSTRAP */
+  .col-md-6{
+    margin-top: 20px;
+  }
+  .col-md-4{
+    margin-top: 20px;
+  }
+  .col-md-3{
+    margin-top: 20px;
+  }
+  .col-md-12{
+    margin-top: 20px;
+  }
+
+  /* INPUT PLACEHOLDER COLOR */
+  ::placeholder {
+    color: #252525;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder {
+    color: #252525;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #252525;
+  }
+
+  /* HYPERLINK COLOR */
+  footer a{
+    color: #02AAB0;
+    text-decoration: none;
+  }
+  footer a:link{
+    color: #02AAB0;
+    text-decoration: none;
+  }
+  footer a:visited{
+    color: #02AAB0;
+    text-decoration: none;
+  }
+  footer a:active{
+    color: #01868b;
+    text-decoration: none;
+  }
+  footer a:hover{
+    color: #01868b;
+    text-decoration: none;
+  }
+
+  /* LOADER */
+  .allsections.loading{
+    visibility: hidden;
+  }
+  .loader.loading{
+    visibility: visible;
+  }
+  .loader{
+    visibility: hidden;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    top: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: auto;
+    margin-top: 600px;
+    width: 100px; /* Need a specific value to work */
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #02AAB0;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #02AAB0 transparent transparent transparent;
+    z-index: 100;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* GLOBAL VALUES */
+  *{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: paragraph;
+  }
+
+  /* HEADER */
+  header h1{
+    font-family: title;
+    font-size: 80px;
+    /* color: #02AAB0; */
+  background-image: linear-gradient(45deg, #00CDAC, #02AAB0);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  }
+  
+  header p1{
+    font-family: paragraph;
+    font-size: 25px;
+    letter-spacing: 5.5px;
+    color: #252525;
+  }
+  .logodesc{
+    margin-top: -33px;
+  }
+  header .logo{
+    text-align: center;
+    padding: 30px;
+  }
+  header{
+    background: transparent;
+  }
+
+  /* INTRO */
+  .intro{
+    width: 100%;
+  }
+  .intro p1{
+    font-family: paragraph;
+    font-size: 30px;
+    color: white;
+  }
+  .intro p3{
+    font-family: paragraphbold;
+    font-size: 30px;
+    color: white;
+  }
+  .currentlocation p3{
+    font-family: paragraphbold;
+    font-size: 30px;
+    color: white;
+  }
+  .intro p2{
+    font-family: paragraph;
+    font-size: 18px;
+    color: white;
+  }
+  .intro p5{
+    font-family: paragraph;
+    font-size: 16px;
+    color: rgb(158, 36, 36);
+  }
+  .messagebox{
+    text-align: center;
+    background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #00CDAC 0%,
+    #02AAB0 100%
+  );
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+  .message{
+    vertical-align: middle;
+    padding: 40px;
+  }
+  .message input{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-width: 0;
+    text-align: center;
+    color: #252525;
+  }
+  .searchbtn{
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    border: 0px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(1, 134, 139, 0.8);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 0 #fff;
+    transition: 0.4s;
+    z-index: 100;
+  }
+  .searchbtn:hover{
+    box-shadow: 0px 0px 0px #fff;
+    color: #02AAB0;
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+
+  .search-bar{
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+
+  .orword p2{
+    font-size: 25px;
+  }
+  .usecurr{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 0px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #01868b;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 0 #fff;
+    transition: 0.4s;
+    z-index: 100;
+  }
+  .usecurr:hover{
+    box-shadow: 0px 0px 0px #fff;
+    color: #02AAB0;
+    background-color: #fff;
+  }
+  @media(max-width: 360px){
+    .searchbtn{
+      scale: 0.9;
+    }
+    .message input{
+      font-size: 17px;
+    }
+  }
+  @media(max-width: 334px){
+    .message input{
+      font-size: 16px;
+    }
+  }
+  .currentlocation p1{
+    color: #252525;
+  }
+  .currentlocation p3{
+    color: #252525;
+  }
+  .currentlocation{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+    font-family: paragraph;
+      font-size: 30px;
+      color: #252525;
+  }
+
+  /* WEATHER DATA */
+
+  /* WEATHER DATA FONT INITIALIZATION */
+  .weatherdata h2{
+    color: white;
+  }
+  .weatherdata h3{
+    color: white;
+    font-size: 70px;
+  }
+  .weatherdata h4{
+    color: white;
+    font-size: 100px;
+  }
+  .weatherdata p1{
+    color: white;
+    font-size: 20px;
+  }
+  /* WRAPPER AROUND ALL CONTENT */
+  .wrapper{
+    margin: 5%;
+    margin-top: 30px;
+  }
+  /* CONTENT WITHIN ALL BOXES */
+  .content{
+    padding: 20px;
+  }
+  /* TEMPERATURE */
+  .temperature{
+    text-align: center;
+    background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #00CDAC 0%,
+    #02AAB0 100%
+  );
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    height: 350px;
+  }
+  .tempvalue{
+    margin-top: 20px;
+    color: white;
+    font-size: 100px;
+  }
+  .hiandlo{
+    color: white;
+    font-size: 20px;
+  }
+  /* CONDITIONS */
+  .conditions{
+    text-align: center;
+    background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #00CDAC 0%,
+    #02AAB0 100%
+  );
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    height: 350px;
+  }
+  .conditionicon{
+    width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .conditiondesc{
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* OTHER WEATHER DATA (PRECIP, HUMIDITY, WIND) */
+  .group3{
+    text-align: center;
+    background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #00CDAC 0%,
+    #02AAB0 100%
+  );
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    min-height: 250px;
+  }
+  .group3 .value{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    bottom: -20px;
+
+  }
+  .humid{
+    color: white;
+    font-size: 70px;
+  }
+  .windspeed{
+    /* color: white;
+    font-size: 70px; */
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    bottom: -20px;
+  }
+  .winddir{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+  }
+  .showmore{
+    text-align: center;
+  }
+  .showmore button{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 0px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #01868b;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 0 #fff;
+    transition: 0.4s;
+    z-index: 100;
+  }
+  .showmore button:hover{
+    box-shadow: 0px 0px 0px #fff;
+    color: #fff;
+    background-color: #02AAB0;
+  }
+
+    /* WHAT TO EXPECT */
+    .forecast{
+      text-align: center;
+      background-image: radial-gradient(
+      farthest-corner at 40px 40px,
+      #00CDAC 0%,
+      #02AAB0 100%
+    );
+      margin-bottom: 0;
+      margin-top: 0;
+      border-radius: 10px;
+      /* height: 400px; */
+    }
+    .forecastcard{
+      text-align: center;
+      background-color: rgb(255, 255, 255, 0.8);
+      margin-bottom: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      min-height: 270px;
+      transition: 0.5s;
+    }
+    .forecastcard:hover{
+      box-shadow: 0 0 40px rgb(255, 255, 255, 0.8);
+    }
+    .forecast .col-md-2{
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+    .forecast .row{
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+    .forecastcard .precip{
+      width: 12px;
+      height: auto;
+      margin-top: 6px;
+    }
+    .forecastcard h2{
+      color: #252525;
+      margin: 0;
+      margin-top: 10px;
+    }
+  
+    .forecastcard img{
+      width: 80px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .dailyforecastcond1{
+      text-transform: capitalize;
+    }
+    .dailyforecastcond2{
+      text-transform: capitalize;
+    }
+    .dailyforecastcond3{
+      text-transform: capitalize;
+    }
+    .dailyforecastcond4{
+      text-transform: capitalize;
+    }
+    .dailyforecastcond5{
+      text-transform: capitalize;
+    }
+    .dailyforecastcond6{
+      text-transform: capitalize;
+    }
+
+/* FOOTER */
+/* SLIDER */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 15px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  scale: 0.8;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #02AAB0;
+  box-shadow: 0 0 20px #00CDAC;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.dmlm{
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.boxaround{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 0 20px #cfcfcf;
+  border-radius: 10px;
+  width: 150px;
+}
+footer p1{
+  font-size: 16px;
+}
+.footercontent{
+  margin: 5%;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.copyrightsymbol{
+  width: 12px;
+  margin-top: -3px;
+}
+.footerlogo{
+  margin-top: 10px;
+  width: 70px;
+}
+
+
+/* TO IMPLEMENT LATER */
+    /* .hourforecast{
+      text-align: center;
+      background-image: radial-gradient(
+      farthest-corner at 40px 40px,
+      #00CDAC 0%,
+      #02AAB0 100%
+    );
+      margin-bottom: 0;
+      margin-top: 0;
+      border-radius: 10px;
+    }
+    .hourforecastcard{
+      text-align: center;
+      background-color: white;
+      margin-bottom: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      height: 250px;
+    }
+    .hourforecastcard h2{
+      color: #252525;
+      font-size: 20px;
+    }
+    .hourforecast p3{
+      font-size: 25px;
+    }
+    .hourforecastcard img{
+      width: 70px;
+    }
+    .hourforecastcard .content{
+      padding: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    @media(min-width: 992px){
+      .hourforecast .row{
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+    }
+    .horizontal-scrollable > .row {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  .horizontal-scrollable{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .horizontal-scrollable > .row > .col-md-2 {
+      display: inline-block;
+      float: none;
+  }
+  .container.horizontal-scrollable{
+    width: 100%;
+  }
+  .hourforecast .col-md-2{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  } */
